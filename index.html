@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chen's Woodworking Projects</title>
+<style>
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    display: flex; 
+    flex-direction: column;
+}
+header {
+    padding: 20px;
+    text-align: center;
+}
+footer {
+    margin-top: auto;
+    padding-top: 20px;
+    text-align: center;
+}
+div.content {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+div.gallery {
+    border: 1px solid #ccc;
+    display: block;
+    width: 100%;
+    position: relative;
+    padding: 100% 0 0 0;
+}
+div.gallery:hover {
+     border: 1px solid #777;
+}
+div.gallery img {
+    position: absolute;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+* {
+    box-sizing: border-box;
+}
+.responsive {
+    padding: 6px 6px;
+    float: left;
+    width: 49.99999%;
+}
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+<header>
+    <h1>Woodworking Projects</h1>
+    <h2>Chen Sun</h2>
+</header>
+<div>
+    <div class="content">
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_self" href="AquariumStand/index.html">
+                <img src="AquariumStand/images/preview_IMG_20150512_2118.jpg" alt="Aquarium Stand">
+                </a>
+                <div class="desc">Aquarium Stand (2015)</div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_self" href="Crib/index.html">
+                    <img src="Crib/images/preview_IMG_20161106_4167.jpg" alt="Crib">
+                </a>
+                <div class="desc">Crib (2016)</div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>&copy; 2018 chensun.net</footer>
+</body>
+</html>
